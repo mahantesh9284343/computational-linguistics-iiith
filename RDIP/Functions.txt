@@ -1,0 +1,10 @@
+Buttons and their Function:-
+1. "Dropdown Menu" :-  To display the language Hindi and English.
+2. "Reform the sentence" :- When the words are selected button is being activated.
+3. After clicking the "Reform the sentence" button, the words are put back and there would be a chance to reselect them.
+4. "check the correctness of this sentence" :- Once all the words are selected,  button is activated.
+5. If the answer you submit is wrong then the button "Get correct answer" is activated.
+6. After clicking the button to get the answer, all the possible answers will be shown.
+7. when the biutton "Check for correctness of sentence" is pressed, the get correct sentence button is invoked.
+8. Beside these feature , it would be useful if we get the count of words that we already selected while reforming the sentence.
+9. If the answer is right then we will activate the button that says "Hide the correct answer" so that the correct answer is hidden. 
