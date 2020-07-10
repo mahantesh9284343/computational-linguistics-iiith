@@ -8,7 +8,7 @@ body{
     padding: 20px;
 }
 .select{
-    padding: 8px 12px;
+    padding: 6px 8px;
 }
 #para1{
     font-size: 25px;
@@ -18,3 +18,9 @@ body{
     font-size: 20px;
     color: blue;
 }
+button {
+    width: 80px;
+    height: 25px;
+    margin: 5px;  
+  }
+  
