@@ -22,7 +22,10 @@ var correctH=["राम और श्याम गयें बाजार","�
 
 function selection()
 {
-	document.getElementById("disp1").innerHTML=""
+    document.getElementById("disp1").innerHTML=""
+    document.getElementById("disp2").innerHTML=""
+    document.getElementById("disp3").innerHTML=""
+    document.getElementById("reform").style.visibility="hidden";
 	count=0
 
 if(document.getElementById("english").selected)
@@ -47,12 +50,25 @@ if(document.getElementById("english").selected)
 		let button = document.createElement("button");
         button.innerHTML = e1[i]
         body.appendChild(button);
+        
+        button.addEventListener ("click",function()
+        {
+            document.getElementById("disp2").innerHTML="Formed Sentences (after selecting words):"
+            document.getElementById("disp3").innerHTML+=this.innerHTML+" ";
+            this.style.visibility="hidden";
+            count=count+1;
+            if(count == 1)
+            {
+                document.getElementById("reform").style.visibility="visible";
+            }
+        
+        });
     }
     }
     else if (document.getElementById("hindi").selected) 
     { 
 	document.getElementById("para1").innerHTML="Form a sentence (Declarative or Interrogative or any other type) from the given words"
-	document.getElementById("para2").innerHTML="(select the buttons in proper order)";
+	document.getElementById("para2").innerHTML="(select the buttons in proper order):";
 	var h=correctH[Math.floor(Math.random() * correctH.length)];
     h1=h.split(" ");
 	let body = document.getElementsByTagName("p")[2];
@@ -68,6 +84,19 @@ if(document.getElementById("english").selected)
         let button = document.createElement("button");
         button.innerHTML = h1[i]
         body.appendChild(button)
+
+        button.addEventListener ("click",function()
+        {
+            document.getElementById("disp2").innerHTML="Formed Sentences (after selecting words)"
+            document.getElementById("disp3").innerHTML+=this.innerHTML+" ";
+            this.style.visibility="hidden";
+            count=count+1;
+            if(count == 1)
+            {
+                document.getElementById("reform").style.visibility="visible";
+            }
+        
+        });
     }
     }
     else
