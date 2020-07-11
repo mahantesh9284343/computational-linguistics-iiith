@@ -22,6 +22,7 @@ button {
     width: 80px;
     height: 25px;
     margin: 5px;  
+    border-radius: 2px;
 }
 #disp2{
     font-size: 20px;
@@ -32,9 +33,11 @@ button {
     color: black;
 }
 #reform {
-    width: 150px;
-    height: 20px;
-    margin: 10px;  
+    width: 170px;
+    height: 25px;
+    font-size: 15px;
+    margin: 10px; 
+    border-radius: 2px;
 }
 
 
