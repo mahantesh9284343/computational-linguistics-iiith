@@ -39,5 +39,12 @@ button {
     margin: 10px; 
     border-radius: 2px;
 }
+#check{
+    width: 280px;
+    height: 30px;
+    font-size: 15px;
+    margin: 10px;
+}
+
 
 
