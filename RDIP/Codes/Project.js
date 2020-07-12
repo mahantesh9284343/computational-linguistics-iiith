@@ -7,7 +7,7 @@ var English=[["John ate an apple before afternoon","before afternoon John ate an
         ["John goes to the library and studies","John studies and goes to the library"],
         ["John ate an apple so did she","she ate an apple so did John"],
         ["the teacher returned the book after she noticed the error","the teacher noticed the error after she returned the book","after the teacher returned the book she noticed the error","after the teacher noticed the error she returned the book","she returned the book after the teacher noticed the error","she noticed the error after the teacher returned the book","after she returned the book the teacher noticed the error","after she noticed the error the teacher returned the book"],
-        ["I told her that I bought a book yesterday","I told her yesterday that I bought a book","yesterday I told her that I bought a book","I bought a book that I told her yesterday","I bought a book yesterday that I told her","yesterday I bought a book that I told her"]]
+        ["I told her that I bought a book yesterday","I told her yesterday that I bought a book","yesterday I told her that I bought a book","I bought a book that I told her yesterday","I bought a book yesterday that I told her","yesterday I bought a book that I told her"]];
 var correctE=["Mary and John went to church","John goes to the library and studies","some students like to study in the night","John ate an apple before afternoon","John went to church after eating","did he go to market","the woman who called my sister sells cosmetics","the teacher returned the book after she noticed the error","I told her that I bought a book yesterday","John ate an apple so did she"]
 
 
@@ -17,7 +17,7 @@ var Hindi=[["राम और श्याम बाजार गयें","र
         ["राम खाकर सोया","खाकर राम सोया","राम सोया खाकर","खाकर सोया राम","सोया राम खाकर","सोया खाकर राम"],
         ["बिल्लियों को मारकर कुत्ता सो गया"	,"मारकर बिल्लियों को कुत्ता सो गया"	 ,"बिल्लियों को मारकर सो गया कुत्ता","मारकर बिल्लियों को सो गया कुत्ता"	,"कुत्ता सो गया बिल्लियों को मारकर"	,"कुत्ता सो गया मारकर बिल्लियों को","सो गया कुत्ता बिल्लियों को मारकर","सो गया कुत्ता मारकर बिल्लियों को"],
         ["एक लाल किताब वहाँ है","एक लाल किताब है वहाँ","वहाँ है एक लाल किताब","है वहाँ एक लाल किताब"],
-        ["एक बड़ी सी किताब वहाँ है","एक बड़ी सी किताब है वहाँ","बड़ी सी एक किताब वहाँ है","बड़ी सी एक किताब है वहाँ","वहाँ है एक बड़ी सी किताब","वहाँ है बड़ी सी एक किताब"," है वहाँ एक बड़ी सी किताब","है वहाँ बड़ी सी एक किताब"]]
+        ["एक बड़ी सी किताब वहाँ है","एक बड़ी सी किताब है वहाँ","बड़ी सी एक किताब वहाँ है","बड़ी सी एक किताब है वहाँ","वहाँ है एक बड़ी सी किताब","वहाँ है बड़ी सी एक किताब"," है वहाँ एक बड़ी सी किताब","है वहाँ बड़ी सी एक किताब"]];
 var correctH=["राम और श्याम गयें बाजार","श्याम सोया और राम भी","मैंने उसे बताया कि राम सो रहा है","राम सोया खाकर","बिल्लियों को मारकर कुत्ता सो गया","एक लाल किताब वहाँ है","एक बड़ी सी किताब वहाँ है"]
 
 function selection()
@@ -29,6 +29,7 @@ function selection()
     document.getElementById("disp1").innerHTML=""
     document.getElementById("disp2").innerHTML=""
     document.getElementById("disp3").innerHTML=""
+    document.getElementById("dispcheck").innerHTML=""
     document.getElementById("reform").style.visibility="hidden";
     document.getElementById("check").style.visibility="hidden";
 	count=0
@@ -129,9 +130,58 @@ function Reform()
         {
     	document.getElementById('button'+i).style.display="inline";
 	    document.getElementById('disp2').innerHTML=""
-	    document.getElementById('disp3').innerHTML=""
+        document.getElementById('disp3').innerHTML=""
+        document.getElementById('dispcheck').innerHTML=""
         document.getElementById('reform').style.visibility="hidden"
         document.getElementById('check').style.visibility="hidden"
+        }
+    }
+}
+
+function check(){
+    var z=String(document.getElementById("disp3").innerHTML).replace(/\s+$/,"");
+    temp=0;
+    temp1=0;
+    if(document.getElementById("english").selected)
+    {
+        for(i=0;i<10;i++)
+        {
+            for(j=0;j<English[i].length;j++)
+            {
+                if(z == English[i][j])
+                {
+                    temp++;
+                }
+            }
+        }
+        if(temp == 1)
+        {
+            document.getElementById("dispcheck").innerHTML="<span style='color:green; font-size:30px'>Right answer!!!</span>"
+        }
+        else
+        {
+            document.getElementById("dispcheck").innerHTML="<span style='color:red; font-size:30px'>Wrong answer!!!</span>"
+        }
+    }
+    else if(document.getElementById("hindi").selected)
+    {
+        for(i=0;i<7;i++)
+        {
+            for(j=0;j<Hindi[i].length;j++)
+            {
+                if(z == Hindi[i][j])
+                {
+                    temp1++;
+                }
+            }
+        }
+        if(temp1 == 1)
+        {
+            document.getElementById("dispcheck").innerHTML="<span style='color:green; font-size:30px'>Right answer!!!</span>"
+        }
+        else
+        {
+            document.getElementById("dispcheck").innerHTML="<span style='color:red; font-size:30px'>Wrong answer!!!</span>"
         }
     }
 }
