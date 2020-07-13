@@ -32,6 +32,7 @@ function selection()
     document.getElementById("dispcheck").innerHTML=""
     document.getElementById("reform").style.visibility="hidden";
     document.getElementById("check").style.visibility="hidden";
+    document.getElementById("getcrt").style.visibility="hidden";
 	count=0
 
 if(document.getElementById("english").selected)
@@ -134,6 +135,7 @@ function Reform()
         document.getElementById('dispcheck').innerHTML=""
         document.getElementById('reform').style.visibility="hidden"
         document.getElementById('check').style.visibility="hidden"
+        document.getElementById('getcrt').style.visibility="hidden"
         }
     }
 }
@@ -161,6 +163,7 @@ function check(){
         else
         {
             document.getElementById("dispcheck").innerHTML="<span style='color:red; font-size:30px'>Wrong answer!!!</span>"
+            document.getElementById("getcrt").style.visibility="visible";
         }
     }
     else if(document.getElementById("hindi").selected)
@@ -182,6 +185,7 @@ function check(){
         else
         {
             document.getElementById("dispcheck").innerHTML="<span style='color:red; font-size:30px'>Wrong answer!!!</span>"
+            document.getElementById("getcrt").style.visibility="visible";
         }
     }
 }
