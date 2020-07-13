@@ -30,9 +30,10 @@ function selection()
     document.getElementById("disp2").innerHTML=""
     document.getElementById("disp3").innerHTML=""
     document.getElementById("dispcheck").innerHTML=""
+    document.getElementById("getans").innerHTML=""
     document.getElementById("reform").style.visibility="hidden";
     document.getElementById("check").style.visibility="hidden";
-    document.getElementById("getcrt").style.visibility="hidden";
+    document.getElementById("getcrt").innerHTML="Get Correct Sentence";
 	count=0
 
 if(document.getElementById("english").selected)
@@ -133,6 +134,8 @@ function Reform()
 	    document.getElementById('disp2').innerHTML=""
         document.getElementById('disp3').innerHTML=""
         document.getElementById('dispcheck').innerHTML=""
+        document.getElementById("getans").innerHTML=""
+     
         document.getElementById('reform').style.visibility="hidden"
         document.getElementById('check').style.visibility="hidden"
         document.getElementById('getcrt').style.visibility="hidden"
@@ -186,6 +189,63 @@ function check(){
         {
             document.getElementById("dispcheck").innerHTML="<span style='color:red; font-size:30px'>Wrong answer!!!</span>"
             document.getElementById("getcrt").style.visibility="visible";
+        }
+    }
+}
+
+function toggle()
+{
+    x=correctE.indexOf(e)
+    temp = English[x];
+    y=correctH.indexOf(h)
+    temp1 = Hindi[y];
+
+    if(document.getElementById("english").selected)
+    {
+        if(document.getElementById("getcrt").innerHTML == "Get Correct Sentence")
+        {
+            for(i=0;i<temp.length;i++)
+            {
+                document.getElementById("getans").innerHTML+=temp[i]+"<br>";
+                document.getElementById("getcrt").innerHTML="Hide Correct Sentence"
+            }
+        }
+        else if(document.getElementById("getcrt").innerHTML="Hide Correct Sentence")
+        {
+            document.getElementById("getans").innerHTML=""
+            document.getElementById("getcrt").innerHTML="Get Answers"
+        }
+        else if(document.getElementById("getcrt").innerHTML="Get Answers")
+        {
+            for(i=0;i<temp.length;i++)
+            {
+                document.getElementById("getans").innerHTML+=temp[i]+"<br>";
+                document.getElementById("getcrt").innerHTML="Hide Correct Sentence"
+            }
+        }
+    }
+    else if(document.getElementById("hindi").selected)
+    {
+        if(document.getElementById("getcrt").innerHTML == "Get Correct Sentence")
+        {
+            for(i=0;i<temp1.length;i++)
+            {
+                document.getElementById("getans").innerHTML+=temp1[i]+"<br>";
+                document.getElementById("getcrt").innerHTML="Hide Correct Sentence"
+            }
+        }
+        else if(document.getElementById("getcrt").innerHTML="Hide Correct Sentence")
+        {
+            document.getElementById("getans").innerHTML=""
+            document.getElementById("getcrt").innerHTML="Get Answers"
+        }
+        else if(document.getElementById("getcrt").innerHTML="Get Answers")
+        {
+            for(i=0;i<temp.length;i++)
+            {
+                document.getElementById("getans").innerHTML+=temp1[i]+"<br>";
+                document.getElementById("getcrt").innerHTML="Hide Correct Sentence"
+            }
         }
     }
 }
