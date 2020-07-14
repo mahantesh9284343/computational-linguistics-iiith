@@ -41,7 +41,7 @@ if(document.getElementById("english").selected)
 {
 
 	document.getElementById("para1").innerHTML="Form a sentence (Declarative or Interrogative or any other type) from the given words"
-    document.getElementById("para2").innerHTML="(select the buttons in proper order)";
+    document.getElementById("para2").innerHTML=" <span style='font-style:italic;color:blue;font-weight:lighter'>(select the buttons in proper order)</span>";
 	let body = document.getElementsByTagName("p")[2];
     /* Random function to jumble words in the sentences */
 	for(i=0;i<e1.length;i++)
@@ -60,7 +60,7 @@ if(document.getElementById("english").selected)
         
         button.addEventListener ("click",function()
         {
-            document.getElementById("disp2").innerHTML="Formed Sentences (after selecting words):"
+            document.getElementById("disp2").innerHTML="Formed Sentences <span style='font-style:italic;color:blue;font-weight:lighter'>(after selecting words):</span>"
             document.getElementById("disp3").innerHTML+=this.innerHTML+" ";
             this.style.display="none";
             count=count+1;
