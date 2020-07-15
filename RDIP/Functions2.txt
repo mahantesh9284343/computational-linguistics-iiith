@@ -1,0 +1,7 @@
+1] select the corpus button contains three corpus(corpus 1, corpus 2, corpus 3)
+2] Submit button is to check if the entered tokens and types are correct or not(both need to be correct)
+3] Button Right Answer that says "Continue", and when that button is clicked, the right answer message and the submit button vanishes.
+4] Again submit bottin to check in entered types are correct or not.
+5] Incorporate the snowball stemmer into javascript code
+6] Tokens need count of all words and Types need coun t of unique words.
+7] New type need count of nunique words using stemming throough snamball stemmer.
