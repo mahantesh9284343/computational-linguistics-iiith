@@ -1,0 +1,9 @@
+body{
+    background-color: lightcyan;
+}
+.select{
+    padding: 6px 10px;
+    width: 180px;
+    height: 30px;
+    font-size: 14px;
+}
