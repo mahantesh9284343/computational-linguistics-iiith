@@ -3,8 +3,6 @@
 <head>
     <title>SERC Project-02</title>
     <link rel="stylesheet" href="Project2.css">  
-    <script src="../Libraries/require.js"></script>
-    <script src="../Libraries/node_modules/snowball/stemmer/lib/Snowball.min.js"></script>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
     
 
@@ -12,18 +10,32 @@
 <body>
     <h1 class="one">Experiment - 2 : Tokens and Types</h1>
     <center>
+    <div class="form-group">
     <select class="select" onchange="select()">
     <option value="none" selected>----Select a corpus----</option>
     <option value="corp1"  id="corpus1">Corpus 1</option>
     <option value="corp2"  id="corpus2">Corpus 2</option>
     <option value="corp3"  id="corpus3">Corpus 3</option>
-    </select><br><br>
-    <p id="corp1"></p>
-    <p id="corp2"></p>
-    <p id="corp3"></p>
-
+    </select></div><br><br>
+    <p id="disp1"></p><br>
+    <p id="disp2" style="visibility: hidden;">Enter the number of tokens and types for the above corpus:</p>
+    <table id="tab1" style="visibility: hidden;">
+    <tr>
+        <td>#tokens:</td>
+        <td><input type="text"></td>
+    </tr>
+    <tr>
+        <td>#types:</td>
+        <td><input type="text"></td>
+    </tr>
+    </table><br>
+    <button id="but1" style="visibility: hidden;">Submit</button>
     </center>
     </section>
+    
+    
+    <script src="C:\Users\Mahantesh\virtual-lab\computational-linguistics-iiith\RDIP_1\Libraries\require.js"></script>
+    <script src="C:\Users\Mahantesh\virtual-lab\computational-linguistics-iiith\RDIP_1\Libraries\node_modules\snowball\stemmer\lib\Snowball.min.js"></script>
     <script src="Project2.js"></script>
 </body>
 </html> 
