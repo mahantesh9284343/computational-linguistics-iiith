@@ -1,10 +1,14 @@
 body{
-    background-color: lightcyan;
+    background-color: white;
+}
+.one{
+    margin: 10px;
+    font-size: 30px;
 }
 .select{
     padding: 6px 10px;
     width: 180px;
-    height: 30px;
+    height: 35px;
     font-size: 14px;
 }
 #disp1{
@@ -36,4 +40,15 @@ td,tr{
     border: 2px solid black;
     padding: 8px;
     color: black;
+}
+#disp3{
+    color: green;
+    font-size: 20px;
+    font-weight: bolder;
+}
+#but1{
+    border-radius: 5px;
+}
+#but2{
+    border-radius: 5px;
 }
