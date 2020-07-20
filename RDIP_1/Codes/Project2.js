@@ -63,6 +63,7 @@ function select()
         document.getElementById("disp1").innerHTML=""
     }
 }
+
 function check_token()
 {
     count=0;
@@ -102,9 +103,8 @@ function process()
     document.getElementById("disp5").innerHTML="#newtypes:"
     document.getElementById("disp3").innerHTML=""
     document.getElementById("but2").innerHTML="Submit"
-  
-
 }
+
 function check()
 {
     count = 0;
@@ -143,6 +143,7 @@ function check()
     console.log(count)
     return count
 }
+
 function compare1(x1)
 {
 
