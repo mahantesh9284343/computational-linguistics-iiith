@@ -42,7 +42,6 @@ td,tr{
     color: black;
 }
 #disp3{
-    color: green;
     font-size: 20px;
     font-weight: bolder;
 }
@@ -75,4 +74,12 @@ td,tr{
     color: black;
     line-height: 1.5;
     font-family: sans-serif;
+}
+#disp6{
+    font-size: 18px;
+    margin-left: 50px;
+    margin-right: 50px;
+    line-height: 1.5;
+    font-family: sans-serif;
+    font-weight: bolder;    
 }

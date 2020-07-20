@@ -8,7 +8,6 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="Project2.css">
-
 </head>
 <body>
     <h1 class="one">Experiment - 2 : Tokens and Types</h1>
@@ -53,25 +52,26 @@
     }
     if((document.getElementById('tok1').style.backgroundColor == 'green') && (document.getElementById('typ1').style.backgroundColor == 'green'))
     {
-        document.getElementById('disp3').innerHTML= '<span style=\'color:green: font-size:20px\'>Right Answer</span>'
+        document.getElementById('disp3').innerHTML= '<span style=\'color:green; font-size:20px\'>Right Answer</span>'
         document.getElementById('but2').style.visibility='visible'
     }
     else
     {
-        document.getElementById('disp3').innerHTML= '<span style=\'color:green: font-size:20px\'>Wrong Answer</span>'
+        document.getElementById('disp3').innerHTML= '<span style=\'color:red;font-size:20px\'>Wrong Answer</span>'
         document.getElementById('but2').style.visibility='hidden'
     } ">Submit</button><br><br>
     <p id="disp4"></p>
-    <form name="st"><p id="disp5"></p><input type="text" name="set" id="set" style="visibility: hidden;background-color:''"></form>
+    <p id="disp5"></p><input type="text" name="set1" id="set1" style="visibility: hidden;">
     <p id="disp3"></p>    
-    <button id="but2" style="visibility:hidden" onclick="process(); x=check();compare(x)">Continue</button>
+    <button id="but2" style="visibility:hidden" onclick="process(); p=check();x++;if(x>=2){compare1(p)}">Continue</button><br><br>
+    <p id="disp6"></p>
 
     </center>
     </section>
     
-    
     <script src="C:\Users\Mahantesh\virtual-lab\computational-linguistics-iiith\RDIP_1\Libraries\require.js"></script>
     <script src="C:\Users\Mahantesh\virtual-lab\computational-linguistics-iiith\RDIP_1\Libraries\node_modules\snowball\stemmer\lib\Snowball.min.js"></script>
+
     <script src="Project2.js"></script>
 </body>
 </html> 
