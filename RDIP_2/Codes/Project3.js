@@ -11,7 +11,7 @@ function select1()
     document.getElementById("disp").innerHTML=""
     document.getElementById("disp1").innerHTML=""
     document.getElementById("tab1").innerHTML=""
-    // document.getElementById("but1").style.visibility="hidden"
+    document.getElementById("but1").style.visibility="hidden"
 
     if(document.getElementById("english").selected)
     {
@@ -34,7 +34,7 @@ function select1()
 function select2()
 {   
     document.getElementById("disp1").innerHTML="<span style='font-style:italic;color:blue;'>Select the POS tag for corresponding words</span>"
-//    document.getElementById("but1").style.visibility="visible"
+    document.getElementById("but1").style.visibility="visible"
 	var table1=document.getElementsByTagName("table")[0]
 	table1.innerHTML=""
 	e=document.getElementById("engdrop1")
@@ -88,10 +88,9 @@ function select2()
             op3.text = "Verb";
             op4.text = "Adjective";
             op5.text = "Adverb";
-            op6.text = "Determiner";
-            op7.text = "Preposition";
-            op8.text = "Conjunction";
-            op9.text = "Interjection";
+            op6.text = "Preposition";
+            op7.text = "Conjunction";
+            op8.text = "Interjection";
             x.options.add(op1);
             x.options.add(op2);
             x.options.add(op3);
@@ -100,7 +99,6 @@ function select2()
             x.options.add(op6);
             x.options.add(op7);
             x.options.add(op8);
-            x.options.add(op9);
             td1.appendChild(text1);
             td2.appendChild(x);
             td3.appendChild(text3);
@@ -118,7 +116,7 @@ function select2()
 	    document.getElementById("disp").innerHTML=""
         document.getElementById("disp1").innerHTML=""
         document.getElementById("tab1").innerHTML=""
-        //document.getElementById("but1").style.visibility="hidden"
+        document.getElementById("but1").style.visibility="hidden"
     }
 }
 
