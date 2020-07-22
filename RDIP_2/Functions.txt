@@ -1,0 +1,7 @@
+Functionality :-
+1] Select language button to select language between English and Hindi.
+2] Select sentence button to select the sentence.
+3] Parts of speech button to select POS for each word in the senytence.
+4] Submit button to submit the selected the POS for all words.
+5] Get answer buttom is used to ge the correct answer.
+6] Hide answer is used to hide the correct answer.
