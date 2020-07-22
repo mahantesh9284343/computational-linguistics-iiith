@@ -1,3 +1,25 @@
+bodu{
+    background-color: aliceblue;
+}
 .one{
     padding: 10px;
+}
+td
+{
+	border:2px solid grey;
+	padding:15px;
+	font-size: large;
+}
+tr:nth-child(1)
+{
+    color:darkred;
+    font-size:x-large;
+}
+#disp1
+{
+    font-size:18px;
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    line-height: 0.1;
+    color:#00009C;
+    font-weight: lighter;
 }
