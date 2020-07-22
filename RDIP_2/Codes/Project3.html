@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>SERC Project-03</title>  
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="Project3.css">
+</head>
+<body>
+    <h4>Experiment</h4><center>
+        <div class="col-sm-3">
+        <select onchange="select1()" class="form-control input-small">
+             <option value="none" selected>---Select Language---</option>
+          <option  id="english" >English</option>
+       <option value="Hindi" id="hindi" >Hindi</option></select></div><br>
+       <!--English sentences!-->
+    <div class="col-sm-5" id="engdrop" style="display:none">
+        <select onchange="" class="form-control input-small">
+             <option value="none" selected>---Select a sentence---</option>
+          <option  id="e1" >The child liked the chocolate.</option>
+       <option  id="e2" >She was stopped by the bravest knight.</option>
+      <option  id="e3" >Mary baked a cake for his birthday</option>
+       <option  id="e4" >She decorated the cake carefully</option>
+         <option  id="e5" >Mary wore a dress with polka dots.</option>
+       </select></div>
+       <!--Hindi sentences!-->
+    <div class="col-sm-4" id="hindrop" style="display:none">
+        <select onchange="" class="form-control input-small">
+             <option value="none" selected>---Select a sentence---</option>
+          <option  id="h1" >राम ने सीता के लिए फल तोड़ा।</option>
+       <option id="h2" >छोटे बच्चे पाठशाला जल्दी आयेंगे।</option>
+     <option  id="h3" >मेहनत का फल मीठा होता है।</option>
+       <option id="h4" >वाह! वह खूबसूरत है।</option>
+        <option  id="h5" >पेड़ से पत्ते गिर गए।</option>
+     </select></div><br>
+    </center>
+<p id="demo"> <p id="demo1"></p><table border="1" id="t1"></table></p>
+    </center>
+    </section>
+    
+    <script src="C:\Users\Mahantesh\virtual-lab\computational-linguistics-iiith\RDIP_1\Libraries\require.js"></script>
+    <script src="C:\Users\Mahantesh\virtual-lab\computational-linguistics-iiith\RDIP_1\Libraries\node_modules\snowball\stemmer\lib\Snowball.min.js"></script>
+
+    <script src="Project3.js"></script>
+</body>
+</html> 
